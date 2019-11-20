@@ -10,4 +10,5 @@ def pytest_addoption(parser):
 
 @pytest.fixture
 def cmdopt(request):
+    print("Running tests")
     return request.config.getoption("--cmdopt")
